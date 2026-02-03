@@ -1,0 +1,132 @@
+players:
+  - id: 1
+    name: Shisui
+    tag: "#LL28VQJRC"
+    th_level: 14
+    bh_level: 10
+    clan: "for ash"
+    trophies: 4200
+    war_stars: 560
+    builder_battles: 120
+    heroes:
+      King: 65
+      Queen: 60
+      Warden: 50
+      Champion: 40
+      Prince: 35
+    pets: "assets/pets_shisui.png"
+    equipment: "assets/equipment_shisui.png"
+    troops: "assets/troops_shisui.png"
+    spells: "assets/spells_shisui.png"
+    machines: "assets/machines_shisui.png"
+    builder_troops: "assets/builder_troops_shisui.png"
+
+  - id: 2
+    name: senpai
+    tag: "#QJ9YVOYPG"
+    th_level: 11
+    bh_level: 7
+    clan: "for ash"
+    trophies: 3800
+    war_stars: 400
+    builder_battles: 90
+    heroes:
+      King: 45
+      Queen: 40
+      Warden: 25
+      Champion: 15
+      Prince: 10
+    pets: "assets/pets_senpai.png"
+    equipment: "assets/equipment_senpai.png"
+    troops: "assets/troops_senpai.png"
+    spells: "assets/spells_senpai.png"
+    machines: "assets/machines_senpai.png"
+    builder_troops: "assets/builder_troops_senpai.png"
+
+  - id: 3
+    name: Mice De
+    tag: "#G28GJLGOY"
+    th_level: 9
+    bh_level: 5
+    clan: "for ash"
+    trophies: 3000
+    war_stars: 320
+    builder_battles: 70
+    heroes:
+      King: 30
+      Queen: 28
+      Warden: 18
+      Champion: 12
+      Prince: 8
+    pets: "assets/pets_micede.png"
+    equipment: "assets/equipment_micede.png"
+    troops: "assets/troops_micede.png"
+    spells: "assets/spells_micede.png"
+    machines: "assets/machines_micede.png"
+    builder_troops: "assets/builder_troops_micede.png"
+
+  - id: 4
+    name: Shawty★
+    tag: "#GQPGVGJJ9"
+    th_level: 8
+    bh_level: 4
+    clan: "for ash"
+    trophies: 2800
+    war_stars: 250
+    builder_battles: 60
+    heroes:
+      King: 25
+      Queen: 20
+      Warden: 15
+      Champion: 10
+      Prince: 5
+    pets: "assets/pets_shawty.png"
+    equipment: "assets/equipment_shawty.png"
+    troops: "assets/troops_shawty.png"
+    spells: "assets/spells_shawty.png"
+    machines: "assets/machines_shawty.png"
+    builder_troops: "assets/builder_troops_shawty.png"
+
+  - id: 5
+    name: Shiro
+    tag: "#G2CVVYJUO"
+    th_level: 8
+    bh_level: 4
+    clan: "for ash"
+    trophies: 2600
+    war_stars: 220
+    builder_battles: 55
+    heroes:
+      King: 20
+      Queen: 18
+      Warden: 12
+      Champion: 8
+      Prince: 5
+    pets: "assets/pets_shiro.png"
+    equipment: "assets/equipment_shiro.png"
+    troops: "assets/troops_shiro.png"
+    spells: "assets/spells_shiro.png"
+    machines: "assets/machines_shiro.png"
+    builder_troops: "assets/builder_troops_shiro.png"
+
+  - id: 6
+    name: Chief
+    tag: "#GVRVJOGQ8"
+    th_level: 6
+    bh_level: 3
+    clan: "for ash"
+    trophies: 2000
+    war_stars: 180
+    builder_battles: 40
+    heroes:
+      King: 10
+      Queen: 8
+      Warden: 5
+      Champion: 3
+      Prince: 2
+    pets: "assets/pets_chief.png"
+    equipment: "assets/equipment_chief.png"
+    troops: "assets/troops_chief.png"
+    spells: "assets/spells_chief.png"
+    machines: "assets/machines_chief.png"
+    builder_troops: "assets/builder_troops_chief.png"

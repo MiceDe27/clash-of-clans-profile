@@ -1,0 +1,81 @@
+body{
+  width: 100%;
+  margin: 0 auto;
+  font-family:Arial, sans-serif;
+}
+@media only screen and (max-width: 768px){
+  body{
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 480px){
+  body{
+    width:100%;}
+}
+
+.intro-section {
+  position: relative;
+  height: 50vh; /* full screen */
+  overflow: hidden;
+}
+
+.intro-section img.object-fit-cover {
+  object-fit: cover;
+}
+
+.intro-gradient {
+  background: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.4), rgba(0,0,0,0));
+  z-index: 1;
+}
+
+.text-gold {
+  background: linear-gradient(to right, #FFD700, #FFA500);
+  -webkit-background-clip: text; 
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  color: transparent;
+}
+
+.btn-gold {
+  background: linear-gradient(to right, #FFD700, #FFA500);
+  color: #000;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  transition: transform 0.2s;
+}
+
+.btn-gold:hover {
+  transform: translateX(5px);
+}
+/* If you want smoother glow behind avatar */
+.card-body .position-relative > div {
+  filter: blur(12px);
+  border-radius: 50%;
+}
+
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 0.75rem 1.5rem rgba(0, 0, 0, 0.15);
+  border-color: rgba(255, 193, 7, 0.3);
+}
+
+.card:hover img {
+  transform: scale(1.05);
+  transition: transform 0.3s ease;
+}
+/*Glass Card CSS for placeholder opacity*/
+.glass-card {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255,255,255,0.3);
+}
+.page{
+  display: none;
+}
+.page.active{
+  display: block;
+}

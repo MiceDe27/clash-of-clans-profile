@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Player Profile</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container-fluid">
+          <a class="fs-5 fw-bold text-gold navbar-brand" href="index.html">CoC</a>
+
+          <!-- Burger button -->
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarMenu"
+            aria-controls="navbarMenu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <!-- Navbar links -->
+          <div class="collapse navbar-collapse" id="navbarMenu">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="accountDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Account
+                </a>
+                <ul
+                  class="dropdown-menu bg-dark dropdown-menu-end"
+                  aria-labelledby="accountDropdown"
+                  style="border:none; box-shadow:none;"
+                >
+                  <li><a class="dropdown-item text-white-50" href="account.html?account=1">Shisui</a></li>
+                  <li><a class="dropdown-item text-white-50" href="account.html?account=2">senpai</a></li>
+                  <li><a class="dropdown-item text-white-50" href="account.html?account=3">Mice De</a></li>
+                  <li><a class="dropdown-item text-white-50" href="account.html?account=4">Shawty★</a></li>
+                  <li><a class="dropdown-item text-white-50" href="account.html?account=5">Shiro</a></li>
+                  <li><a class="dropdown-item text-white-50" href="account.html?account=6">Chief</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+<main class="pt-5 mt-4">
+
+  <!-- PROFILE HEADER -->
+  <section class="py-5">
+    <div class="container">
+      <div class="card card-custom mx-auto" style="max-width: 720px;">
+        <div class="gold-gradient" style="height: 6px; background: linear-gradient(90deg, #facc15, #f59e0b); background-color: #020617;
+      border-radius: 1rem;
+      border: 1px solid rgba(250, 204, 21, 0.2);"></div>
+
+        <div class="p-4">
+          <div class="row align-items-center g-4 mb-4">
+            <div class="col-md-auto text-center">
+              <img id="MyImage" src=" "
+                   class="rounded-circle gold-border" style="border: 4px solid #facc15;"
+                   width="120"
+                   height="120"
+                   alt="Avatar">
+            </div>
+
+            <div class="col text-center text-md-start">
+              <h1 id="Player_Name" class="fw-bold">Player Name</h1>
+              <p id="Player_Tag" class="text-secondary mb-3">#PLAYER_TAG</p>
+
+              <div class="d-flex flex-wrap gap-2 justify-content-center justify-content-md-start">
+                <span id="TH_lvl" class="badge badge-gold px-3 py-2" style="background: rgba(250, 204, 21, 0.2); color: #facc15;">
+                  <i class="bi bi-crown"></i>0
+                </span>
+                <span id="BH_lvl" class="badge badge-gold px-3 py-2" style="background: rgba(250, 204, 21, 0.2); color: #facc15;">
+                  <i class="bi bi-crown"></i>0
+                </span>
+                <span id="Clan_Name" class="badge bg-secondary px-3 py-2">
+                  Clan Name
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- LEAGUE & TROPHIES -->
+          <div class="d-flex flex-wrap gap-3 pt-4 border-top">
+            <!--Trophies-->
+            <div class="d-flex align-items-center bg-secondary bg-opacity-25 p-3 rounded">
+              <i class="bi bi-trophy-fill fs-3 text-warning me-3"></i>
+              <div>
+                <small class="text-secondary">Trophies</small>
+                <div id="Trophies" class="fw-bold">0</div>
+              </div>
+            </div>
+            <!-- War Stars -->
+            <div class="d-flex align-items-center bg-secondary bg-opacity-25 p-3 rounded">
+              <i class="bi bi-shield fs-3 text-warning me-3"></i>
+              <div>
+                <small class="text-secondary">War Stars</small>
+                <div id="War_Star" class="fw-bold">0</div>
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-center bg-secondary bg-opacity-25 p-3 rounded">
+              <i class="bi bi-flag-fill fs-3 text-warning me-3"></i>
+              <div>
+                <small class="text-secondary">League</small>
+                <div id="League" class="fw-bold">0</div>
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-center bg-secondary bg-opacity-25 p-3 rounded">
+              <i class="bi bi-star-fill fs-3 text-warning me-3"></i>
+              <div>
+                <small class="text-secondary">Builder Battles</small>
+                <div id="Builder_Battles" class="fw-bold">0</div>
+              </div>
+            </div>
+            
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HERO LEVELS -->
+  <div>
+  <h2 class="text-center fw-bold">Hero Levels</h2>
+</div>
+<section id="carouselAccountControls" class="carousel slide carousel-fade" data-bs-touch="true">
+  <div class="carousel-inner">
+
+    <!-- Barbarian King -->
+    <div class="carousel-item active">
+      <div class="container py-5">
+        <div class="row g-3 justify-content-center">
+          <div class="col-6 col-lg-3">
+            <div class="card card-custom text-center p-3">
+              <img src="assets/King.png" class="img-fluid mb-2" style=" width: 80px; height: 80px; object-fit: contain; ">
+              <h6>Barbarian King</h6>
+              <small id="King_lvl" >Level</small>
+              <div class="progress mt-2">
+                <div id="King_Progress" class="progress-bar bg-warning" style="width:0%">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Archer Queen -->
+    <div class="carousel-item">
+      <div class="container py-5">
+        <div class="row g-3 justify-content-center">
+          <div class="col-6 col-lg-3">
+            <div class="card card-custom text-center p-3">
+              <img src="assets/Queen.png" class="img-fluid mb-2" style=" width: 80px; height: 80px; object-fit: contain; ">
+              <h6>Archer Queen</h6>
+              <small id="Queen_lvl">Level</small>
+              <div class="progress mt-2">
+                <div id="Queen_Progress" class="progress-bar bg-warning" style="width: 0%">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Grand Warden -->
+    <div class="carousel-item">
+      <div class="container py-5">
+        <div class="row g-3 justify-content-center">
+          <div class="col-6 col-lg-3">
+            <div class="card card-custom text-center p-3">
+              <img src="assets/Warden.png" class="img-fluid mb-2" style=" width: 80px; height: 80px; object-fit: contain; ">
+              <h6>Grand Warden</h6>
+              <small id="Warden_lvl" >Level</small>
+              <div class="progress mt-2">
+                <div id="Warden_Progress" class="progress-bar bg-warning" style="width: 0%">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Royal Champion -->
+    <div class="carousel-item">
+      <div class="container py-5">
+        <div class="row g-3 justify-content-center">
+          <div class="col-6 col-lg-3">
+            <div class="card card-custom text-center p-3">
+              <img src="assets/RC.png" class="img-fluid mb-2" style=" width: 80px; height: 80px; object-fit: contain; ">
+              <h6>Royal Champion</h6>
+              <small id="Champion_lvl">Level</small>
+              <div class="progress mt-2">
+                <div id="Champion_Progress" class="progress-bar bg-warning" style="width: 0%">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Minion Prince -->
+    <div class="carousel-item">
+      <div class="container py-5">
+        <div class="row g-3 justify-content-center">
+          <div class="col-6 col-lg-3">
+            <div class="card card-custom text-center p-3">
+              <img src="assets/Minion.png" class="img-fluid mb-2" style=" width: 80px; height: 80px; object-fit: contain; " alt="Minion Prince">
+              <h6>Minion Prince</h6>
+              <small id="Prince_lvl">Level</small>
+              <div class="progress mt-2">
+                <div id="Prince_Progress" class="progress-bar bg-warning" style="width: 0%">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselAccountControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselAccountControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</section>
+  
+<!--Hero Equipment--> 
+<section class="bg-dark rounded-2 shadow-lg mb-5 mt-5">
+  <h1 class="text-white text-center pt-5 mb-5">Town Hall</h1>
+  <div class="">
+    <img id="Pets"  src=" " alt="Pets Photo"
+    class="img-fluid">
+    <img id="Equipments" src=" " alt="Equipments Photo"
+    class="img-fluid">
+    <img id="Troops" src=" " alt="Troops Photo"
+    class="img-fluid">
+    <img id="Spells" src=" " alt="Spells Photo"
+    class="img-fluid">
+    <img id="Machines" src=" " alt="Machines Photo"
+    class="img-fluid">
+  </div>
+</section>
+
+<!--Builder Hall-->
+<section class="bg-dark rounded-2 shadow-lg mt-5 mb-5">
+  <h1 class="text-white text-center pt-5 mb-5">Builder Hall</h1>
+  <div class="mb-4">
+    <h2 class="text-white text-center mb-4">Battle Heroes</h2>
+    <div class="text-center g-3 mt-4">
+    <img src="assets/BC.png" alt="Battle Machine" class="img-fluid mt-2">
+    <img src="assets/BM.png" alt="Battle Copter" class="img-fluid m-2">
+    </div>
+  </div>
+  <div>
+    <img id="Builder_Troops" class="img-fluid" src=" " alt="Builder Troops Photo">
+  </div>
+</section>
+
+  <!-- STATISTICS
+  <section class="py-5 section-muted" style="background-color: rgba(255, 255, 255, 0.05);">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Player Statistics</h2>
+
+      <div class="row g-3 justify-content-center">
+        <div class="col-6 col-lg-3">
+          <div class="card card-custom p-3 text-center">
+            <i class="bi bi-shield fs-2 text-warning"></i>
+            <small class="text-secondary">War Stars</small>
+            <div class="fw-bold fs-4">1,245</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- SCREENSHOT GALLERY 
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center fw-bold mb-4">Screenshot Gallery</h2>
+
+      <div class="row g-3 justify-content-center">
+        <div class="col-6 col-md-4">
+          <img src="shot1.png" class="img-fluid rounded">
+        </div>
+      </div>
+    </div>
+  </section>
+-->
+
+
+
+</main>
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white-50">
+  <div class="container py-5 px-4">
+    <div class="d-flex flex-column align-items-center gap-3 text-center">
+      <!-- Logo -->
+      <div class="d-flex align-items-center gap-2">
+        <div class="d-flex align-items-center justify-content-center">
+          <h2 class="text-gold"><b>CoC</b></h2>
+        </div>
+        <span class="fw-bold fs-5 text-white-50">Profile</span>
+      </div>
+
+      <!-- Copyright -->
+      <p class="text-dark-50 small mb-0">
+        © 2026 My Clash of Clans Profile. All rights reserved.
+      </p>
+
+      <!-- Disclaimer -->
+      <p class="text-dark-50 small mt-1" style="max-width: 400px;">
+        This site is not affiliated with, endorsed, sponsored, or specifically approved by Supercell and Supercell is not responsible for it.
+      </p>
+
+    </div>
+  </div>
+</footer>
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>
