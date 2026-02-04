@@ -47,6 +47,9 @@ body{
 .btn-gold:hover {
   transform: translateX(5px);
 }
+.intro-section > .position-absolute {
+  pointer-events: none;
+}
 /* If you want smoother glow behind avatar */
 .card-body .position-relative > div {
   filter: blur(12px);
